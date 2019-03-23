@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><a class="navbar-brand" href="#">Number Jeopardy</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Easy</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Hard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center">You have gotten <span id="correct"></span> out of <span id="total"></span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1> <span id="number"></span></h1>
+                    <p id="test"></p>
+                    <p><a class="btn btn-primary" id="getQuestion" role="button">Get Question</a></p>
+                </div>
+                <div class="input-group" id="hardGroup">
+                    <div class="input-group-prepend"><span class="input-group-text">Awnser:</span></div><input class="form-control" id="textForm" type="text">
+                    <div class="input-group-append" id="go"><button class="btn btn-primary" type="button">Go!</button></div>
+                </div>
+                <div id="easyGroup">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #f82727;">1</div>
+                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #a718b4;">2</div>
+                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #2851e4;">3</div>
+                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #e2ff6e;">4</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">You are...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
