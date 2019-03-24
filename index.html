@@ -7,6 +7,7 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
@@ -37,15 +38,15 @@
                     <p><a class="btn btn-primary" id="getQuestion" role="button">Get Question</a></p>
                 </div>
                 <div class="input-group" id="hardGroup">
-                    <div class="input-group-prepend"><span class="input-group-text">Awnser:</span></div><input class="form-control" id="textForm" type="text">
+                    <div class="input-group-prepend"><span class="input-group-text">Answer:</span></div><input class="form-control" id="textForm" type="text">
                     <div class="input-group-append" id="go"><button class="btn btn-primary" type="button">Go!</button></div>
                 </div>
                 <div id="easyGroup">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #f82727;">1</div>
-                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #a718b4;">2</div>
-                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #2851e4;">3</div>
-                        <div class="col-sm-6 col-lg-3 choice" style="background-color: #e2ff6e;">4</div>
+                    <div id="easyRow" class="row justify-content-around" >
+                        <div class="col-sm-5 mx-5 my-1 mx-sm-0 col-lg-2  choice" style="background-color: #f82727;">1</div>
+                        <div class="col-sm-5 mx-5 my-1 mx-sm-0 col-lg-2  choice" style="background-color: #a718b4;">2</div>
+                        <div class="col-sm-5 mx-5 my-1 mx-sm-0 col-lg-2  choice" style="background-color: #2851e4;">3</div>
+                        <div class="col-sm-5 mx-5 my-1 mx-sm-0 col-lg-2  choice" style="background-color: #e2ff6e;">4</div>
                     </div>
                 </div>
             </div>

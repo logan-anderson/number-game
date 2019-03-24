@@ -3,8 +3,8 @@ let number;
 let correct=0;
 let total=0;
 
-$('#hardGroup').show();
-$('#easyGroup').hide();
+$('#hardGroup').hide();
+$('#easyGroup').show();
 
 function update() {
     $('#correct').text(correct);
