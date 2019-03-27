@@ -1,7 +1,14 @@
 #easyRow {
-    height: 120px;
     text-align: center;
 }
 .choice {
     border-radius: 25px;
+    background:#2E76CF;
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.choice:hover {
+    background:#173b67;
 }
