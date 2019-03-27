@@ -28,7 +28,7 @@ function update() {
 function updateMult() {
     //update the multiply choice text
     let highest = number + Math.floor(number/2) + 1;
-    console.log("highest "+highest);
+    //console.log("highest "+highest);
     let multAwnsers=[1,2,3,4];
     let correctindex = Math.floor(Math.random()*4);
     for (let i = 0; i < 4; i++) {
